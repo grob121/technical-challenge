@@ -11,7 +11,8 @@ import SwiftUI
 struct technical_challengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = ListViewModel()
+            ListView(viewModel: viewModel)
         }
     }
 }
